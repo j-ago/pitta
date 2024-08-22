@@ -1,18 +1,18 @@
 import streamlit as st
 
 # Title of the app
-st.title('Vataアンバランス度診断アプリ')
+st.title('Pittaアンバランス度診断アプリ')
 
 # Instructions
 st.write('以下の質問にお答えください。各質問に最も当てはまる答えを選んでください。')
 
 # Questions from the Excel file
 questions = [
-    "肌がかさついて、乾燥している",
-    "ふけが多い",
-    "眠りが浅く、睡眠不足ぎみである",
-    "腸の調子が悪く、下痢と便秘が交代する",
-    "ガスがたまって、おならが多い",
+    "やたらに汗が出る",
+    "肌に赤いブツブツ（発疹）ができる",
+    "顔面や鼻が赤い",
+    "白目部分が赤く充血する",
+    "お腹がいっぱいになるまで大食する",
     # Add additional questions here
 ]
 
@@ -53,4 +53,3 @@ if st.button('診断結果を見る'):
         st.error("とても乱れている状態です。改善に向けて迅速に対応してください。")
 
     st.write(f"あなたのスコアは: {total_score} / 40 ({percentage_score:.2f}%)")
-
